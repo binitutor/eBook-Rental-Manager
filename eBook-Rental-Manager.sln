@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eBook-Rental-Manager", "eBook-Rental-Manager\eBook-Rental-Manager.csproj", "{96C02BF2-3A3E-4980-BCEF-0ECDD9E94344}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96C02BF2-3A3E-4980-BCEF-0ECDD9E94344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96C02BF2-3A3E-4980-BCEF-0ECDD9E94344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96C02BF2-3A3E-4980-BCEF-0ECDD9E94344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96C02BF2-3A3E-4980-BCEF-0ECDD9E94344}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EB303BF-E6DF-462B-BEEE-89CC1099138E}
+	EndGlobalSection
+EndGlobal
