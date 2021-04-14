@@ -1,0 +1,108 @@
+﻿@model IEnumerable<eBook_Rental_Manager.Models.Book>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Books List</h2>
+
+@if (User.Identity.IsAuthenticated)
+{
+    if (User.IsInRole("Admin"))
+    {
+        <p>@Html.ActionLink("Add New Book to the List", "Create", null, new { @class = "btn btn-success btn-lg" })</p>
+    }
+}
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageURL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Author)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Genre.GenreName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Excerpt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReleaseDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RentalPrice)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @* @Html.DisplayFor(modelItem => item.ImageURL)  Here is where I display thumbnail images from database for each book*@
+                    <img src="~/img/publisher.png" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Author)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Genre.GenreName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Excerpt)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReleaseDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RentalPrice)
+                </td>
+
+                <td>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        if (User.IsInRole("super user"))
+                        {
+                            <p><a href="#" class="btn btn-primary btn-lg">Rent &raquo;</a></p>
+                        }
+                    }
+                </td>
+                <td>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        if (User.IsInRole("super user"))
+                        {
+                            <p><a href="#" class="btn btn-danger btn-lg">Return &lArr;</a></p>
+                        }
+                    }
+                </td>
+
+                <td>
+                </td>
+
+                @if (User.Identity.IsAuthenticated)
+                {
+                    if (User.IsInRole("Admin"))
+                    {
+                        <td>
+                            @Html.ActionLink("Edit Book Detail", "Edit", new { id = item.ID }, new { @class = "btn btn-warning btn-sm btn-block" }) <br />
+                            @Html.ActionLink("View Book Details", "Details", new { id = item.ID }, new { @class = "btn btn-success btn-sm btn-block" }) <br />
+                            @Html.ActionLink("Delete Book From the List", "Delete", new { id = item.ID }, new { @class = "btn btn-danger btn-sm btn-block" })
+                        </td>
+                    }
+                }
+
+
+
+            </tr>
+        }
+
+    </table>

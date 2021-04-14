@@ -1,0 +1,18 @@
+﻿body {
+    font-family: 'Trispace', sans-serif;
+}
+
+#footer1 {
+    background: #06270B;
+    color: #fff;
+}
+.footerlinks {
+    color: #fff;
+}
+
+.footerlinks:hover {
+    color: #E3C00E;
+    cursor: pointer;
+}
+
+

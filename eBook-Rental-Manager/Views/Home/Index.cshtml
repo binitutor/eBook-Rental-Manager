@@ -1,0 +1,276 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+<section>
+    @*<img src="~/img/Books-banner.png" class="img-circle" />
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous">
+
+        </script>
+
+    *@
+
+    <div class="container">
+        <div>
+            <div id="carousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                    <li data-target="#carousel" data-slide-to="3"></li>
+                    <li data-target="#carousel" data-slide-to="4"></li>
+                    <li data-target="#carousel" data-slide-to="5"></li>
+                </ol>
+
+                <div class="carousel-inner">
+
+                    <div class="item active">
+                        <img src="~/img/library-banner-1.png" style="height:200px" />
+                        <div class="container">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img style="height:200px; width: 100%" src="~/img/expanse-banner.png" />
+                        <div class="container">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img style="height:200px; width: 100%" src="~/img/hp-banner.png" />
+                        <div class="container">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img style="height:200px; width: 100%" src="~/img/old-man-banner.png" />
+                        <div class="container">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img style="height:200px; width: 100%" src="~/img/got-banner.png" />
+                        <div class="container">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            @*slide controller *@
+
+            @*
+                <a href="#" class="left carousel-control" data-slide="prev">
+                    <span class="icon-prev"></span>
+                </a>
+                <a href="#" class="right carousel-control" data-slide="prev">
+                    <span class="icon-next"></span>
+                </a>
+            *@
+            <script>
+                $("#carousel").carousel(
+                    {
+                        interval: 3000
+                    });
+            </script>
+        </div>
+
+
+</section>
+
+
+
+
+
+@*
+
+    <section>
+        <img src="~/img/library-banner-1.png" class="img-fluid" />
+    </section>
+
+
+*@
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <center>
+                    <h2>Our Features</h2>
+                    <p><b>Our 3 Primary Features </b></p>
+                </center>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <center>
+                    <img width="150px" src="~/img/digital-inventory.png" />
+                    <h4>Digital Book Inventory</h4>
+                    <p class="text-justify">This site is a digital eBook files management system. It offers a centralised virtual storage of eBooks, providing ample information on Book Titles, Authors, publications dates and much more. </p>
+                </center>
+            </div>
+            <div class="col-md-4">
+                <center>
+                    <img width="150px" src="~/img/search-online.png" />
+                    <h4>Search Books</h4>
+                    <p class="text-justify">This site is developed in a format that allows easy searching and filtering systems. Future development plans target on including the ability for rating systems.</p>
+                </center>
+            </div>
+            <div class="col-md-4">
+                <center>
+                    <img width="150px" src="~/img/defaulters-list.png" />
+                    <h4>Defaulter List</h4>
+                    <p class="text-justify">Appropriate search results will be shown. In case the desired book is not available for view or rent, similar recommendations will be provided for users.</p>
+                </center>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section>
+    @*<img src="~/img/Books-banner.png" class="img-circle" />*@
+
+    <div class="container">
+        <div>
+            <div id="carousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="0"></li>
+                </ol>
+            </div>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="~/img/Books-banner.png" class="img-circle" />
+                    <div class="container">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img width="150px" src="~/img/digital-inventory.png" />
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <p>This is image 2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @*slide controller *@
+        <a href="carousel" class="left carousel-control" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a href="carousel" class="right carousel-control" data-slide="prev">
+            <span class="icon-next"></span>
+        </a>
+
+        <script>
+            $("#carousel").carousel(
+                {
+                    interval: 2000
+                });
+        </script>
+    </div>
+
+
+</section>
+
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <center>
+                    <h2>Our Process</h2>
+                    <p><b>We have a Simple 3 Step Process</b></p>
+                </center>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <center>
+                    <img width="150px" src="~/img/sign-up.png" />
+                    <h4>Sign Up</h4>
+                    <p class="text-justify">
+                        User should sign up to gain advanced access. User levels are:
+                        <br />- Public user: It gives access to view Book lists
+                        <br />- Super user: It gives access to view and rent Books
+                        <br />- Administrator preveilages: It gives the user access to Create Read Update and Delete Book Lists
+                        <br />[ability to manage rental portal will be included in future updates]
+
+                    </p>
+                </center>
+            </div>
+            <div class="col-md-4">
+                <center>
+                    <img width="150px" src="~/img/administrator.png" />
+                    <h4>Login</h4>
+                    <p class="text-justify">
+                        <strong>Super user</strong> credentials for sign in:
+                        <br />- Username: super user
+                        <br />- Password: password<br /><br />
+                        <strong>Admin user</strong> credentials for sign in: (use rarely!!!)
+                        <br />- Username: Admin
+                        <br />- Password: password
+                    </p>
+                </center>
+            </div>
+            <div class="col-md-4">
+                <center>
+                    <img width="150px" src="~/img/library.png" />
+                    <h4>Visit Us</h4>
+                    <p class="text-justify">
+                        For more information, visit our social media sites:
+                        <br /><button style="font-size:24px">Facebook<i class="fa fa-facebook-f"></i></button>
+                        <br /><button style="font-size:24px">Twitter<i class="fa fa-twitter"></i></button>
+                        <br /><button style="font-size:24px">Instagram<i class="fa fa-instagram-square"></i></button>
+                        <br /><button style="font-size:24px">Gmail<i class="fa fa-envelope"></i></button>
+                    </p>
+                </center>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+@*
+
+    <div class="jumbotron">
+        <h1>Fictions</h1>
+
+        <p class="lead">Collection of books written by J.K Rowling</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Harry Potter and the Sorcerers Stone</h2>
+            <p>
+                Harry Potter is an orphan child from ...
+            </p>
+            <p><a href="#" class="btn btn-primary btn-lg">Rent &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Harry Potter and the Sorcerers Stone</h2>
+            <p>
+                Harry Potter is an orphan child from ...
+            </p>
+            <p><a href="#" class="btn btn-primary btn-lg">Rent &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Harry Potter and the Sorcerers Stone</h2>
+            <p>
+                Harry Potter is an orphan child from ...
+            </p>
+            <p><a href="#" class="btn btn-primary btn-lg">Rent &raquo;</a></p>
+        </div>
+    </div>
+
+*@
